@@ -43,4 +43,9 @@ volumes:
   api-media:
   api-static:
   api-db:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: /home/ubuntu/data
   solr-data:
