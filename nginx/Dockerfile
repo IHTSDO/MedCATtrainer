@@ -5,3 +5,9 @@ ADD nginx.conf /etc/nginx/nginx.conf
 # Add site
 RUN mkdir /etc/nginx/sites-enabled/
 ADD sites-enabled/ /etc/nginx/sites-enabled
+
+RUN mkdir -p /etc/nginx/logs
+RUN mkdir -p /etc/ssl/private
+RUN mkdir -p /etc/ssl/certs
+ADD ssl/nginx-testselfsigned.key /etc/ssl/private/nginx-testselfsigned.key
+ADD ssl/nginx-testselfsigned.crt /etc/ssl/certs/nginx-testselfsigned.crt
