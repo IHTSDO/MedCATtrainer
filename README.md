@@ -17,3 +17,13 @@ MedCATTrainer was presented at EMNLP/IJCNLP 2019 :tada:
 Official docs available [here](https://medcattrainer.readthedocs.io/en/latest/)
 
 If you have any questions why not reach out to the community [discourse forum here](https://discourse.cogstack.org/)
+
+# Snomed Annotation Trial
+
+The annotation trial runs the production docker compose with a customised Nginx setup to run the connection over HTTPS. 
+
+Running the Nginx server requires Let's Encrypt certificate and key. Once generated the certificate and key can be place in the `nginx/ssl` folder and Ngnix Docker image built. 
+
+Build the Nginx Docker image with the following command: 
+`sudo docker build ./ -t cogstacksystems/medcat-trainer-nginx:latest`
+
