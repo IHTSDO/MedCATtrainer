@@ -1,0 +1,12 @@
+[Unit]
+Description=JupyterHub Service
+
+[Service]
+Type=simple
+User=ubuntu
+ExecStart=/home/ubuntu/MedCATtrainer/scripts/start_jupyter_lab.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+

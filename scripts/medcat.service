@@ -1,0 +1,9 @@
+[Unit]
+Description=MedCATtrainer service
+
+[Service]
+ExecStart=/home/ubuntu/scripts/start_med_cat_trainer.sh
+
+[Install]
+WantedBy=multi-user.target
+
