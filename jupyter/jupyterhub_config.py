@@ -16,7 +16,6 @@ class UnaiDockerSpawner(SystemUserSpawner):
         return super().start()
 
 
-# c.JupyterHub.spawner_class = 'dockerspawner.DockerSpawner'
 # dummy for testing. Don't use this in production!
 # c.JupyterHub.authenticator_class = "dummy"
 # c.DummyAuthenticator.password = "test"
