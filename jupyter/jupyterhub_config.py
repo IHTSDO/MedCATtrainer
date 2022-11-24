@@ -28,6 +28,6 @@ c.JupyterHub.hub_ip = '0.0.0.0'
 c.JupyterHub.bind_url = 'http://<JupyterHubIP>:8000'
 c.JupyterHub.hub_connect_ip = '<JupyterHubIP>'
 
-c.DockerSpawner.image = 'jupyter/scipy-notebook'
+c.DockerSpawner.image = 'unai/scipy-notebook-extended'
 c.DockerSpawner.network_name = 'jupyterhub'
 c.DockerSpawner.remove = True

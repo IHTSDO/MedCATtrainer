@@ -66,6 +66,11 @@ One the config file has been updated and ssl certificates are in place the Nginx
 Build the Nginx Docker image with the following command: 
 `sudo docker build ./ -t cogstacksystems/medcat-trainer-nginx:latest`
 
+### Jupyter notebook
+The notebook spawned by the JupyterHub are is extended version the of `jupyter/scipy-notebook` book and need rebuilding after changes to the Dockerfile. 
+To build the notebook run the follow command in the `jupyter_notebook` folder
+`docker build ./ -t unai/scipy-notebook-extended`
+
 ### Configure Medcat Server for Autostart
 
 1. Update the paths in `scripts/start_med_cat_trainer.sh`
